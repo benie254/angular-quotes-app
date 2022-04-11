@@ -26,7 +26,7 @@
                         <footer class="blockquote-footer"> by {{quote.author}} </footer>
                     </blockquote>
 
-                    <!--  -->
+                    <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-quote-detail>
 
                     <button (click)="toggleDetails(i)" class="btn btn-primary">
                         Toggle Details
