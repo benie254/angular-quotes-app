@@ -14,6 +14,10 @@ export class QuoteComponent implements OnInit {
     new Quote(3,'Quote 3','Author 3','User 3',new Date(2022,2,17),20,3),
   ];
 
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
