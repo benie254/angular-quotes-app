@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,`Quote 1`,'Author 1','User 1',new Date(2022,4,14),20,3),
-    new Quote(2,`Quote 2`,'Author 2','User 2',new Date(2022,1,15),20,3),
-    new Quote(3,`Quote 3`,'Author 3','User 3',new Date(2022,2,17),20,3),
+    new Quote(1,`So, live your life that the fear of death can never enter your heart. Love your life, perfect your life, beautify all things in your life.`,'Chief Tecumseh','Benie',new Date(2022,4,11)),
+    new Quote(2,`Tread softly because you tread on my dreams`,'William Butler Yeast','Julia K.',new Date(2022,3,4)),
+    new Quote(3,`I've learned that people will forget what you said, people will forget what you did. But people will never forget how you made them feel.`,'Maya Angelou','J. Janja',new Date(2022,2,17)),
   ];
 
   toggleDetails(index){
@@ -27,7 +27,7 @@ export class QuoteComponent implements OnInit {
 
   deleteQuote(isComplete, index){
     if (isComplete){
-      let toDelete = confirm(`Are you sure you want to delete the Quote:"${this.quotes[index].name}"?`)
+      let toDelete = confirm(`Are you sure you want to delete this quote by ${this.quotes[index].author}?`)
   
       if (toDelete){
         this.quotes.splice(index,1)

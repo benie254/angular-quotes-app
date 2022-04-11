@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div>
-        <h2> Create a new Quote </h2>
+        <h2 class="text-center"> Create a new Quote </h2>
     </div>
     <hr>
     <!-- quote form -->
@@ -17,7 +17,7 @@
 
         <div class="form-group">
             <label for="description"> Quote </label>
-            <textarea class="form-control" name="description" id="description" [(ngModel)]="newQuote.description" #description="ngModel" placeholder="Enter your quote here..." rows="4" required>
+            <textarea class="form-control" name="description" id="description" [(ngModel)]="newQuote.description" #description="ngModel" placeholder="Enter your quote here..." rows="4" required></textarea>
 
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                 <p> Please enter a Quote. </p>

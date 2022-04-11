@@ -1,10 +1,11 @@
 <!-- Header section -->
-<div class="container-fluid">
+<div class="container">
     <a class="navbar-brand" href="#index.html">
         <h1> <img src="/favicon.ico" alt="site icon" width="50" height="50"> The QuotEye </h1>
+        <span style="color:white;font-family: 'Courgette',cursive;"> An eye for the best quotes. </span>  
     </a>
     <p>
-       An eye for the best quotes. 
+       
     </p>
 </div>
 
@@ -16,12 +17,12 @@
         <div class="card-holder">
             <div class="card" *ngFor="let quote of quotes;let i = index">
 
-                <em> Posted by {{quote.name}} </em>
+                <em style="font-family:'Courgette';"> Posted by {{quote.name}} </em>
 
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p> &#8216; {{quote.description}} &#8217; </p>
-                        <footer class="blockquote-footer"> by {{quote.author}} </footer>
+                        <h4> &#8216; {{quote.description}} &#8217; </h4>
+                        <footer class="blockquote-footer"> {{quote.author}} </footer>
                     </blockquote>
 
                     <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete) = "deleteQuote($event,i)"></app-quote-detail>
@@ -39,11 +40,15 @@
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
 
+</div>
+
+<div class="container-fluid">
+
     <br><br>
 
     <p> "You have reached the end of your Quotes." </p>
 
-    <div>
+    <div class="gify">
         <div style="position:relative;"> <iframe src="https://gifer.com/embed/NGgD" width="50%" height="50%" style='top:0;left:0;' frameBorder="0" allowFullScreen></iframe> </div>  
     </div>
 

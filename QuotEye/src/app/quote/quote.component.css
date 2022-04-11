@@ -1,8 +1,10 @@
-.container-fluid h1 {
-    padding-top: 1.5%;
-}
-.container-fluid p {
-    padding-left: 20%;
+.container {
+    padding-top: 2%;
+    background-image: url('/assets/img/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 8%;
 }
 
 .row {
@@ -29,6 +31,10 @@ div h4 {
     background-color: aquamarine;
 }
 
+.card-body h4 {
+    font-family: 'Anonymous Pro', monospace;
+}
+
 .btn {
     margin-top: 1.5%;
     margin-bottom: 5%;
@@ -44,6 +50,11 @@ p {
     padding-bottom: 1.5%;
     margin-left: 2.5%;
     text-align: center;
+}
+
+.blockquote-footer {
+    font-family: 'Spectral SC', serif;
+    margin-top: 0.5%;
 }
 
 footer {
