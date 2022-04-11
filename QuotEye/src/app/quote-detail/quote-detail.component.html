@@ -1,27 +1,33 @@
+<div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</div>
+
+<div class="container">
+
+</div>
+
 <div class="btn-group">
     <button class="btn btn-info" type="submit" (click)="voteUp()">
         <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
         <span>  </span>
-        <span class="badge">  Upvote </span>
+        <span class="badge"> {{upvote}} Upvote </span>
     </button>
 
     <button class="btn btn-info" type="submit" (click)="voteUp()">
         <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
         <span></span>
-        <span class="badge">  Downvote </span>
+        <span class="badge"> {{downvote}} Downvote </span>
 
     </button>
 
 </div>
 
 <div>
-    <p> Published on {{quote.completeDate|date:'short'}} <strong> <em> {{quote.completeDate|dateCount}} days ago </em> </strong> </p>
+    <p> <strong> <em> Published {{quote.completeDate|dateCount}} days ago </em> </strong> </p>
 </div>
 
-<br>
-
 <div>
-    <button class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span> Delete </button>
+    <button class="btn btn-danger" (click)="quoteDelete(true)"> <span class="glyphicon glyphicon-trash"></span> Delete </button>
 </div>
 
 
