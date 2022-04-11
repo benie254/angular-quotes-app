@@ -4,3 +4,17 @@
 .container-fluid p {
     padding-left: 20%;
 }
+
+.row {
+    margin-top: 3%;
+}
+
+.card {
+    width: 30rem;
+}
+
+.btn {
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    float: left;
+}

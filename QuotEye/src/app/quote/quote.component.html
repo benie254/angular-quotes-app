@@ -7,3 +7,36 @@
        An eye for the best quotes. 
     </p>
 </div>
+
+<!-- Row starts -->
+<!-- with two columns -->
+<div class="row">
+
+    <div class="col">
+        <div class="card-holder">
+            <div class="card" *ngFor="let quote of quotes;let i = index">
+                <div class="card-body">
+                    <h4 class="card-title">
+
+                        {{}}
+
+                    </h4>
+
+                    <blockquote class="blockquote mb-0">
+                        <p> &#8216; {{}} &#8217; </p>
+                        <footer class="blockquote-footer"> by {{}} </footer>
+
+                    </blockquote>
+
+                    <!--  -->
+
+                    <button (click)="toggleDetails(i)" class="btn btn-primary">
+                        Toggle Details
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
