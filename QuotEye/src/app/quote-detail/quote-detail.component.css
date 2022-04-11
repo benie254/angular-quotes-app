@@ -1,6 +1,18 @@
+blockquote {
+    margin-top: 2.5%;
+}
+
+.quote-description {
+    background-color: aquamarine;
+    margin-top: 2.5%;
+    padding: 5%;
+}
+
+.btn-info {
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+}
+
 .btn-danger{
     text-align: center;
-}
-div {
-    background-color: black;
 }

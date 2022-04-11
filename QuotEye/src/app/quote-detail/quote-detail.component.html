@@ -3,31 +3,31 @@
 </div>
 
 <div class="container">
-
+    <div class="btn-group">
+        <button class="btn btn-info" type="submit" (click)="voteUp()">
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+            <span>  </span>
+            <span class="badge"> {{upvote}} Upvote </span>
+        </button>
+    
+        <button class="btn btn-info" type="submit" (click)="voteUp()">
+            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+            <span></span>
+            <span class="badge"> {{downvote}} Downvote </span>
+    
+        </button>
+    
+    </div>
+    
+    <div>
+        <p> <strong> <em> Published {{quote.completeDate|dateCount}} days ago </em> </strong> </p>
+    </div>
+    
+    <div>
+        <button class="btn btn-danger" (click)="quoteDelete(true)"> <span class="glyphicon glyphicon-trash"></span> Delete </button>
+    </div>
 </div>
 
-<div class="btn-group">
-    <button class="btn btn-info" type="submit" (click)="voteUp()">
-        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-        <span>  </span>
-        <span class="badge"> {{upvote}} Upvote </span>
-    </button>
 
-    <button class="btn btn-info" type="submit" (click)="voteUp()">
-        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
-        <span></span>
-        <span class="badge"> {{downvote}} Downvote </span>
-
-    </button>
-
-</div>
-
-<div>
-    <p> <strong> <em> Published {{quote.completeDate|dateCount}} days ago </em> </strong> </p>
-</div>
-
-<div>
-    <button class="btn btn-danger" (click)="quoteDelete(true)"> <span class="glyphicon glyphicon-trash"></span> Delete </button>
-</div>
 
 
