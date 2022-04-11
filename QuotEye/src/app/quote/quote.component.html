@@ -9,6 +9,8 @@
     </p>
 </div>
 
+
+
 <!-- Row starts -->
 <!-- with two columns -->
 <div class="row">
@@ -17,7 +19,7 @@
         <div class="card-holder">
             <div class="card" *ngFor="let quote of quotes;let i = index">
 
-                <em style="font-family:'Courgette';"> Posted by {{quote.name}} </em>
+                <span> <span style="font-family:'Courgette';margin-left:1%;"> Added by {{quote.name}}</span> <span style="float:right;margin-right:1%;font-style:italic;"> {{quote.completeDate|dateCount}} days ago </span> </span> 
 
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
@@ -55,5 +57,7 @@
     <footer>
         <app-social></app-social>
     </footer>
+
+    
 
 </div>

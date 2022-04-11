@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,`So, live your life that the fear of death can never enter your heart. Love your life, perfect your life, beautify all things in your life.`,'Chief Tecumseh','Benie',new Date(2022,4,11)),
-    new Quote(2,`Tread softly because you tread on my dreams`,'William Butler Yeast','Julia K.',new Date(2022,3,4)),
-    new Quote(3,`I've learned that people will forget what you said, people will forget what you did. But people will never forget how you made them feel.`,'Maya Angelou','J. Janja',new Date(2022,2,17)),
+    new Quote(1,`So, live your life that the fear of death can never enter your heart. Love your life, perfect your life, beautify all things in your life.`,'Chief Tecumseh','Benie',new Date(2022,6,12)),
+    new Quote(2,`Tread softly because you tread on my dreams`,'William Butler Yeast','Julia K.',new Date(2022,4,11)),
+    new Quote(3,`I've learned that people will forget what you said, people will forget what you did. But people will never forget how you made them feel.`,'Maya Angelou','J. Janja',new Date(2022,4,3)),
   ];
 
   toggleDetails(index){
@@ -35,6 +35,7 @@ export class QuoteComponent implements OnInit {
     }
   }
   
+
 
   constructor() { }
 

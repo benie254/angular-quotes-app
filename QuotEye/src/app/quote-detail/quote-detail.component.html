@@ -3,7 +3,7 @@
 </div>
 
 <div class="container">
-    <div class="btn-group">
+    <div class="form-group">
         <button class="btn btn-info" type="submit" (click)="voteUp()">
             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
             <span>  </span>
@@ -16,17 +16,36 @@
             <span class="badge"> {{downvote}} Downvote </span>
     
         </button>
+
+        <div>
+            <button class="btn btn-danger" (click)="quoteDelete(true)"> <span class="glyphicon glyphicon-trash"></span> Delete </button>
+        </div>
     
     </div>
+
     
-    <div>
-        <p> <strong> <em> Published {{quote.completeDate|dateCount}} days ago </em> </strong> </p>
-    </div>
+
+
+   
     
-    <div>
-        <button class="btn btn-danger" (click)="quoteDelete(true)"> <span class="glyphicon glyphicon-trash"></span> Delete </button>
-    </div>
+    
 </div>
+
+ <!-- <input [(ngModel)]="newId" />
+<button (click)="addEntry()">Add</button> -->
+
+<table>
+    <tbody>
+      <tr *ngFor="let entry of entries">
+        <td>{{entry.id}}</td>
+        <td>
+          <span *ngIf="getElapsedTime(entry) as elapsed">
+            {{elapsed['hours']}} h {{elapsed['minutes']}} m {{elapsed['seconds']}} s
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 
 

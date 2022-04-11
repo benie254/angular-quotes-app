@@ -17,7 +17,7 @@ import { DateCountPipe } from './date-count.pipe';
     QuoteDetailComponent,
     QuoteFormComponent,
     SocialComponent,
-    DateCountPipe
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
