@@ -1,1 +1,43 @@
-<p>quote-form works!</p>
+<div class="container-fluid">
+    <div>
+        <h2> Create a new Quote </h2>
+    </div>
+    <hr>
+    <!-- quote form -->
+    <form (ngSubmit)="submitQuote()" #goalForm="ngForm">
+
+        <div class="form-group">
+            <label for="author"> Quote Author </label>
+            <input type="text" class="form-control" name="author" id="author" [(ngModel)]="newQuote.author" #author="ngModel" placeholder="Enter an author's name here..." required>
+
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p> Please enter a Quote Author. </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description"> Quote </label>
+            <textarea class="form-control" name="description" id="description" [(ngModel)]="newQuote.description" #description="ngModel" placeholder="Enter your quote here..." rows="4" required>
+
+            <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+                <p> Please enter a Quote. </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name"> Your Name </label>
+            <input type="text" class="form-control" name="name" id="name" [(ngModel)]="newQuote.name" #name="ngModel" placeholder="What is your name? ...">
+
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                <p> Please enter your name. </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-success" type="submit"> Add Quote </button>
+            <button class="btn btn-danger" type="reset"> Reset </button>
+        </div>
+
+    </form>
+
+</div>
