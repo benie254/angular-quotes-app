@@ -18,3 +18,14 @@
     margin-bottom: 5%;
     float: left;
 }
+
+p {
+    margin-left: 2.5%;
+    text-align: center;
+}
+
+.gify {
+    padding-bottom: 1.5%;
+    margin-left: 2.5%;
+    text-align: center;
+}
