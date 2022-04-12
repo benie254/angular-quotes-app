@@ -10,7 +10,7 @@ A quotes app created using [Angular CLI](https://github.com/angular/angular-cli)
 The app is simple and straightforward. Users can read their favorite quotes, see who posted it, and when. They can also toggle show/hide functionalities, such as the upvote, downvote, and delete. Users can add their favorite quotes through a form, which has three required fileds: Quote Author, Quote, and Name (the user's name). 
 
 ## Screenshot
-<img src="https://user-images.githubusercontent.com/99865051/163048835-a57ab0ff-e299-4822-9ba4-a1732e726254.png" >
+<img src="https://user-images.githubusercontent.com/99865051/163049182-82d06285-88ce-4d76-b0fe-5f17824d46c7.png" >
 
 ## Live Page 
 [QuotEye](https://benie254.github.io/angular-quotes-app)
