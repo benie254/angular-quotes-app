@@ -1,5 +1,5 @@
 .container {
-    padding-top: 5%;
+    padding-top: 1.5%;
     background-image: url('../../assets/img/bg2.jpg');
     background-position: center;
     background-size: cover;
@@ -21,9 +21,9 @@ div h4 {
 }
 
 .card {
-    width: 30rem;
+    min-width: 10rem;
     margin-top: 5%;
-    margin-right: 35%;
+    margin-right: 25%;
     margin-bottom: 5%;
 }
 
