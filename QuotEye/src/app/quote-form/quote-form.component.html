@@ -4,11 +4,12 @@
     </div>
     <hr>
     <!-- quote form -->
-    <form (ngSubmit)="submitQuote()" #goalForm="ngForm">
+    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
 
         <div class="form-group">
             <label for="author"> Quote Author </label>
-            <input type="text" class="form-control" name="author" id="author" [(ngModel)]="newQuote.author" #author="ngModel" placeholder="Enter an author's name here..." required>
+            <input type="text" class="form-control" name="author" id="author" [(ngModel)]="newQuote.author" #author="ngModel" placeholder="Enter an author's name here... (required)" required [ngClass]="{'is-valid': (author.touched || author.dirty) && !author.valid}">
+            <span class="invalid-feedback"> <span *ngIf="author.errors?.required"> Author name is required. </span> </span>
 
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                 <p> Please enter a Quote Author. </p>
@@ -17,7 +18,8 @@
 
         <div class="form-group">
             <label for="description"> Quote </label>
-            <textarea class="form-control" name="description" id="description" [(ngModel)]="newQuote.description" #description="ngModel" placeholder="Enter your quote here..." rows="4" required></textarea>
+            <textarea class="form-control" name="description" id="description" [(ngModel)]="newQuote.description" #description="ngModel" placeholder="Enter your quote here... (required)" rows="4" required [ngClass]="{'is-valid': (description.touched || description.dirty) && !description.valid}"></textarea>
+            <span class="invalid-feedback"> <span *ngIf="description.errors?.required"> Quote is required. </span> </span>
 
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                 <p> Please enter a Quote. </p>
@@ -26,7 +28,8 @@
 
         <div class="form-group">
             <label for="name"> Your Name </label>
-            <input type="text" class="form-control" name="name" id="name" [(ngModel)]="newQuote.name" #name="ngModel" placeholder="What is your name? ...">
+            <input type="text" class="form-control" name="name" id="name" [(ngModel)]="newQuote.name" #name="ngModel" placeholder="What is your name? ... (required)" required [ngClass]="{'is-valid': (name.touched || name.dirty) && !name.valid}">
+            <span class="invalid-feedback"> <span *ngIf="name.errors?.required"> Your name is required. </span> </span>
 
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p> Please enter your name. </p>
@@ -34,7 +37,7 @@
         </div>
 
         <div class="form-group">
-            <button class="btn btn-success" type="submit"> Add Quote </button>
+            <button class="btn btn-success" type="submit" [disabled]="!quoteForm.valid"> Add Quote </button>
             <button class="btn btn-danger" type="reset"> Reset </button>
         </div>
 
