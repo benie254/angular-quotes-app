@@ -1,6 +1,6 @@
 .container {
-    padding-top: 2%;
-    background-image: url('/img/bg2.jpg');
+    padding-top: 5%;
+    background-image: url('/QuotEye/src/app/quote/img/bg2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
