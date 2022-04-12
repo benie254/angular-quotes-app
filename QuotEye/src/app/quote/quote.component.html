@@ -1,11 +1,12 @@
 <!-- Header section -->
+<link rel="stylesheet" href="/app/quote/quote.component.css">
 <div class="container">
     <a class="navbar-brand" href="#index.html">
         <h1> <img src="/favicon.ico" alt="site icon" width="50" height="50"> The QuotEye </h1>
-        <span style="color:white;font-family: 'Courgette',cursive;"> An eye for the best quotes. </span>  
+        <span style="color:white;font-family: 'Courgette',cursive;"> An eye for the best quotes. </span>
     </a>
     <p>
-       
+
     </p>
 </div>
 
@@ -19,7 +20,7 @@
         <div class="card-holder">
             <div class="card" *ngFor="let quote of quotes;let i = index">
 
-                <span> <span style="font-family:'Courgette';margin-left:1%;"> Added by {{quote.name}}</span> <span style="float:right;margin-right:1%;font-style:italic;"> {{quote.completeDate|dateCount}} days ago </span> </span> 
+                <span> <span style="font-family:'Courgette';margin-left:1%;"> Added by {{quote.name}}</span> <span style="float:right;margin-right:1%;font-style:italic;"> {{quote.completeDate|dateCount}} days ago </span> </span>
 
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
@@ -51,13 +52,13 @@
     <p> "You have reached the end of your Quotes." </p>
 
     <div class="gify">
-        <div style="position:relative;"> <iframe src="https://gifer.com/embed/NGgD" width="50%" height="50%" style='top:0;left:0;' frameBorder="0" allowFullScreen></iframe> </div>  
+        <div style="position:relative;"> <iframe src="https://gifer.com/embed/NGgD" width="50%" height="50%" style='top:0;left:0;' frameBorder="0" allowFullScreen></iframe> </div>
     </div>
 
     <footer>
         <app-social></app-social>
     </footer>
 
-    
+
 
 </div>
