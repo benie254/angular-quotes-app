@@ -1,15 +1,33 @@
 .container {
     padding-top: 1.5%;
-    background-image: url('./../../app/assets/img/bg2.jpg');
+    background-image: url('./../../app/assets/img/bg2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 8%;
+    width: 100%;
+}
+
+.container @media only screen and (max-width: 768px) {
+    width: 80%
+}
+.container @media only screen and (max-width: 640px) {
+    width: 60%;
+}
+.container @media only screen and (max-width: 480px) {
+    width: 45%;
+}
+.container @media only screen and (max-width: 300px) {
+    width: 30%;
 }
 
 .row {
     margin-top: 3%;
     background-color: mediumturquoise;
+}
+
+div h1 {
+    color:aquamarine;
 }
 
 div h4 {
